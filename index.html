@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="shortcut icon" href="./img/other/coins.png" type="image/x-icon">
+	<link rel="stylesheet" href="./css/fonts.css" type="text/css" media="all">
+	<link rel="stylesheet" href="./css/aos.css" type="text/css" media="all">
+	<link rel="stylesheet" href="./css/style.min.css" type="text/css" media="all">
+</head>
+
+<body>
+
+	<header class="page_header">
+		<div class="container">
+			<div class="top_header">
+				<div class="logo">
+					<img src="./img/icon/logo.png" alt="logo">
+				</div>
+				<div class="mobile_menu">
+					<button class="mobile_menu_btn" type="button">
+						<svg class="mobile_menu_img" viewBox="0 0 512 512">
+							<linearGradient id="A" gradientUnits="userSpaceOnUse" x1="0" y1="256" x2="512" y2="256">
+								<stop offset="0" stop-color="rgb(201, 68, 130)"/>
+								<stop offset=".021" stop-color="rgb(187, 40, 109)"/>
+								<stop offset=".293" stop-color="rgb(224, 104, 160)"/>
+								<stop offset=".554" stop-color="rgb(224, 104, 160)"/>
+								<stop offset=".796" stop-color="#bd2abc"/>
+								<stop offset="1" stop-color="#e15a46"/>
+							</linearGradient>
+							<path d="M432 236h-76c-44.112 0-80-35.888-80-80V80c0-44.112 35.888-80 80-80h76c44.112 0 80 35.888 80 80v76c0 44.112-35.888 80-80 80zM356 40c-22.056 0-40 17.944-40 40v76c0 22.056 17.944 40 40 40h76c22.056 0 40-17.944 40-40V80c0-22.056-17.944-40-40-40h-76zM156 236H80c-44.112 0-80-35.888-80-80V80C0 35.888 35.888 0 80 0h76c44.112 0 80 35.888 80 80v76c0 44.112-35.888 80-80 80zM80 40c-22.056 0-40 17.944-40 40v76c0 22.056 17.944 40 40 40h76c22.056 0 40-17.944 40-40V80c0-22.056-17.944-40-40-40H80zm76 472H80c-44.112 0-80-35.888-80-80v-76c0-44.112 35.888-80 80-80h76c44.112 0 80 35.888 80 80v76c0 44.112-35.888 80-80 80zM80 316c-22.056 0-40 17.944-40 40v76c0 22.056 17.944 40 40 40h76c22.056 0 40-17.944 40-40v-76c0-22.056-17.944-40-40-40H80zm432 116c0-11.046-8.954-20-20-20s-20 8.954-20 20c0 22.056-17.944 40-40 40h-76c-22.056 0-40-17.944-40-40v-76c0-22.056 17.944-40 40-40h76a40.03 40.03 0 0 1 36.675 23.996c4.425 10.12 16.218 14.735 26.338 10.312s14.737-16.218 10.312-26.338C492.582 294.829 463.8 276 432 276h-76c-44.112 0-80 35.888-80 80v76c0 44.112 35.888 80 80 80h76c44.112 0 80-35.888 80-80z" fill="url(#A)"/>
+						</svg>
+					</button>
+
+					<div class="mobile_menu_block">
+						<ul class="mobile_menu_list">
+							<li class="mobile_list_item">
+								<a class="mobile_list_link" href="#">Home</a>
+							</li>
+							<li class="mobile_list_item">
+								<a class="mobile_list_link" href="#about_anchor">About</a>
+							</li>
+							<li class="mobile_list_item">
+								<a class="mobile_list_link" href="#team_anchor">Team</a>
+							</li>
+							<li class="mobile_list_item">
+								<a class="mobile_list_link" href="#token_anchor">Tokens</a>
+							</li>
+							<li class="mobile_list_item">
+								<a class="mobile_list_link" href="#roadmap_anchor">Roadmap</a>
+							</li>
+							<li class="mobile_list_item">
+								<a class="mobile_list_link" href="#app_anchor">App</a>
+							</li>
+							<li class="mobile_list_item">
+								<a class="mobile_list_link" href="#faq_anchor">FAQ</a>
+							</li>
+							<li class="mobile_list_item">
+								<a class="mobile_list_link" href="#contact_anchor">Contact</a>
+							</li>
+						</ul>
+						<ul class="mobile_header_social">
+							<li class="mobile_social_item">
+								<a class="mobile_social_link" href="#">
+									<svg class="mobile_social_img" viewBox="0 0 24 24">
+										<path d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z"/>
+									</svg>
+								</a>
+							</li>
+							<li class="mobile_social_item">
+								<a class="mobile_social_link" href="#">
+									<svg class="mobile_social_img" viewBox="0 0 512 512">
+										<path d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z"/>
+									</svg>
+								</a>
+							</li>
+							<li class="mobile_social_item">
+								<a class="mobile_social_link" href="#">
+									<svg class="mobile_social_img" viewBox="0 0 511 511.9">
+										<path d="M510.949 150.5c-1.199-27.199-5.598-45.898-11.898-62.102-6.5-17.199-16.5-32.598-29.602-45.398-12.801-13-28.301-23.102-45.301-29.5C407.851 7.199 389.25 2.801 362.05 1.602 334.648.301 325.949 0 256.449 0s-78.199.301-105.5 1.5c-27.199 1.199-45.898 5.602-62.098 11.898-17.203 6.5-32.602 16.5-45.402 29.602-13 12.801-23.098 28.301-29.5 45.301-6.301 16.301-10.699 34.898-11.898 62.098C.75 177.801.449 186.5.449 256l1.5 105.5c1.199 27.199 5.602 45.898 11.902 62.102 6.5 17.199 16.598 32.598 29.598 45.398 12.801 13 28.301 23.102 45.301 29.5 16.301 6.301 34.898 10.699 62.102 11.898 27.297 1.203 36 1.5 105.5 1.5l105.5-1.5c27.199-1.199 45.898-5.598 62.098-11.898 34.402-13.301 61.602-40.5 74.902-74.898 6.297-16.301 10.699-34.902 11.898-62.102 1.199-27.301 1.5-36 1.5-105.5l-1.301-105.5zm-46.098 209c-1.102 25-5.301 38.5-8.801 47.5a84.92 84.92 0 0 1-48.602 48.602c-9 3.5-22.598 7.699-47.5 8.797-27 1.203-35.098 1.5-103.398 1.5s-76.5-.297-103.402-1.5c-25-1.098-38.5-5.297-47.5-8.797C94.551 451.5 84.449 445 76.25 436.5c-8.5-8.301-15-18.301-19.102-29.398-3.5-9-7.699-22.602-8.797-47.5-1.203-27-1.5-35.102-1.5-103.402l1.5-103.398c1.098-25 5.297-38.5 8.797-47.5 4.102-11.103 10.602-21.2 19.204-29.404 8.297-8.5 18.297-15 29.398-19.098 9-3.5 22.602-7.699 47.5-8.801 27-1.199 35.102-1.5 103.398-1.5 68.402 0 76.5.301 103.402 1.5 25 1.102 38.5 5.301 47.5 8.801 11.098 4.098 21.199 10.598 29.398 19.098 8.5 8.301 15 18.301 19.102 29.402 3.5 9 7.699 22.598 8.801 47.5 1.199 27 1.5 35.098 1.5 103.398l-1.5 103.301zm-208.402-235c-72.598 0-131.5 58.898-131.5 131.5s58.902 131.5 131.5 131.5 131.5-58.898 131.5-131.5-58.898-131.5-131.5-131.5zm0 216.801c-47.098 0-85.301-38.199-85.301-85.301s38.203-85.301 85.301-85.301S341.75 208.898 341.75 256s-38.199 85.301-85.301 85.301zm0 0"/><path d="M423.852 119.301c0 16.953-13.746 30.699-30.703 30.699s-30.699-13.746-30.699-30.699 13.746-30.699 30.699-30.699 30.703 13.742 30.703 30.699zm0 0"/>
+									</svg>
+								</a>
+							</li>
+							<li class="mobile_social_item">
+								<a class="mobile_social_link" href="#">
+									<svg class="mobile_social_img" viewBox="0 0 90 90">
+										<path d="M82.287 45.907c-.937-4.071-4.267-7.074-8.275-7.521-9.489-1.06-19.098-1.065-28.66-1.06-9.566-.005-19.173 0-28.665 1.06-4.006.448-7.334 3.451-8.27 7.521-1.334 5.797-1.35 12.125-1.35 18.094s0 12.296 1.334 18.093c.936 4.07 4.264 7.073 8.272 7.521 9.49 1.061 19.097 1.065 28.662 1.061 9.566.005 19.171 0 28.664-1.061 4.006-.448 7.336-3.451 8.272-7.521 1.333-5.797 1.34-12.124 1.34-18.093s.009-12.297-1.324-18.094zM28.9 50.4h-5.54v29.438h-5.146V50.4h-5.439v-4.822H28.9V50.4zm13.977 29.439h-4.629v-2.785c-1.839 2.108-3.585 3.136-5.286 3.136-1.491 0-2.517-.604-2.98-1.897-.252-.772-.408-1.994-.408-3.796V54.311h4.625v18.795c0 1.084 0 1.647.042 1.799.111.718.462 1.082 1.082 1.082.928 0 1.898-.715 2.924-2.166v-19.51h4.629l.001 25.528zm17.573-7.662c0 2.361-.159 4.062-.468 5.144-.618 1.899-1.855 2.869-3.695 2.869-1.646 0-3.234-.914-4.781-2.824v2.474h-4.625V45.578h4.625v11.189c1.494-1.839 3.08-2.769 4.781-2.769 1.84 0 3.078.969 3.695 2.88.311 1.027.468 2.715.468 5.132v10.167zm17.457-4.259h-9.251v4.525c0 2.363.773 3.543 2.363 3.543 1.139 0 1.802-.619 2.066-1.855.043-.251.104-1.279.104-3.134h4.719v.675c0 1.491-.057 2.518-.099 2.98a6.59 6.59 0 0 1-1.08 2.771c-1.281 1.854-3.179 2.768-5.595 2.768s-4.262-.871-5.599-2.614c-.981-1.278-1.485-3.29-1.485-6.003v-8.941c0-2.729.447-4.725 1.43-6.015 1.336-1.747 3.177-2.617 5.54-2.617 2.321 0 4.161.87 5.457 2.617.969 1.29 1.432 3.286 1.432 6.015l-.002 5.285zm-6.929-9.755c-1.546 0-2.321 1.181-2.321 3.541v2.362h4.625v-2.362c-.001-2.36-.774-3.541-2.304-3.541zm-17.166 0c-.762 0-1.534.36-2.307 1.125v15.559c.772.774 1.545 1.14 2.307 1.14 1.334 0 2.012-1.14 2.012-3.445V61.646c0-2.302-.678-3.483-2.012-3.483zm2.584-23.19c1.705 0 3.479-1.036 5.34-3.168v2.814h4.675V8.82h-4.675v19.718c-1.036 1.464-2.018 2.188-2.953 2.188-.626 0-.994-.37-1.096-1.095-.057-.153-.057-.722-.057-1.817V8.82h-4.66v20.4c0 1.822.156 3.055.414 3.836.47 1.307 1.507 1.917 3.012 1.917zM23.851 20.598v14.021h5.184V20.598L35.271 0h-5.242l-3.537 13.595L22.812 0h-5.455l3.323 9.646c1.663 4.828 2.701 8.468 3.171 10.952zm18.368 14.375c2.342 0 4.162-.881 5.453-2.641.981-1.291 1.451-3.325 1.451-6.067v-9.034c0-2.758-.469-4.774-1.451-6.077-1.291-1.765-3.11-2.646-5.453-2.646-2.33 0-4.149.881-5.443 2.646-.993 1.303-1.463 3.319-1.463 6.077v9.034c0 2.742.47 4.776 1.463 6.067 1.293 1.76 3.113 2.641 5.443 2.641zm-2.231-18.679c0-2.387.724-3.577 2.231-3.577s2.229 1.189 2.229 3.577v10.852c0 2.387-.722 3.581-2.229 3.581s-2.231-1.194-2.231-3.581V16.294z"/>
+									</svg>
+								</a>
+							</li>
+							<li class="mobile_social_item">
+								<a class="mobile_social_link" href="#">
+									<svg class="mobile_social_img" viewBox="0 0 24 24">
+										<path d="M12 .5C5.37.5 0 5.78 0 12.292c0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567l-.015-2.005c-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121a4.52 4.52 0 0 1 1.23 3.164c0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182l-.015 3.229c0 .309.21.678.825.56C20.565 21.917 24 17.495 24 12.292 24 5.78 18.627.5 12 .5z"/>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<nav class="menu">
+					<ul class="menu_list">
+						<li class="menu_list_item">
+							<a class="menu_list_link" href="#">Home</a>
+						</li>
+						<li class="menu_list_item">
+							<a class="menu_list_link" href="#about_anchor">About</a>
+						</li>
+						<li class="menu_list_item">
+							<a class="menu_list_link" href="#team_anchor">Team</a>
+						</li>
+						<li class="menu_list_item">
+							<a class="menu_list_link" href="#token_anchor">Tokens</a>
+						</li>
+						<li class="menu_list_item">
+							<a class="menu_list_link" href="#roadmap_anchor">Roadmap</a>
+						</li>
+						<li class="menu_list_item">
+							<a class="menu_list_link" href="#app_anchor">App</a>
+						</li>
+						<li class="menu_list_item">
+							<a class="menu_list_link" href="#faq_anchor">FAQ</a>
+						</li>
+						<li class="menu_list_item">
+							<a class="menu_list_link" href="#contact_anchor">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="header_content">
+				<div class="header_title_block">
+					<h1 class="title"><span class="title_mark">Blockchain</span> solution of the future</h1>
+					<p class="header_subtitle">
+						Our project specializes in blockchain technologies, smart contracts and investments in digital currencies.
+					</p>
+					<div class="header_links">
+						<a class="header_link" href="#roadmap_anchor">Roadmap</a>
+						<a class="header_link" href="#app_anchor">Try App</a>
+					</div>
+				</div>
+
+				<div class="counter_block">
+					<h2 class="counter_title">Token sale ends in</h2>
+					<p class="counter_subtitle">30% discount in the first three days</p>
+					<ul class="counter">
+						<li class="counter_item">
+							<span class="counter_num counter_day"></span>
+							<span class="counter_item_text">Days</span>
+						</li>
+						<li class="counter_item">
+							<span class="counter_num counter_hours"></span>
+							<span class="counter_item_text">Hours</span>
+						</li>
+						<li class="counter_item">
+							<span class="counter_num counter_minutes"></span>
+							<span class="counter_item_text">Minutes</span>
+						</li>
+						<li class="counter_item">
+							<span class="counter_num counter_second"></span>
+							<span class="counter_item_text">Seconds</span>
+						</li>
+					</ul>
+					<a class="counter_btn" href="#">Buy Token Now</a>
+					<div class="progress">
+						<div class="progress_start">0 coins</div>
+						<div class="progress_inner">
+							<p class="progress_inner_text">35 000 000 000 coins</p>
+						</div>
+						<div class="progress_end">112 000 000 000 coins</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<ul class="header_social">
+			<li class="header_social_item">
+				<a class="header_social_link" href="#">
+					<svg class="header_social_img" viewBox="0 0 24 24">
+						<path d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z"/>
+					</svg>
+				</a>
+			</li>
+			<li class="header_social_item">
+				<a class="header_social_link" href="#">
+					<svg class="header_social_img" viewBox="0 0 512 512">
+						<path d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z"/>
+					</svg>
+				</a>
+			</li>
+			<li class="header_social_item">
+				<a class="header_social_link" href="#">
+					<svg class="header_social_img" viewBox="0 0 511 511.9">
+						<path d="M510.949 150.5c-1.199-27.199-5.598-45.898-11.898-62.102-6.5-17.199-16.5-32.598-29.602-45.398-12.801-13-28.301-23.102-45.301-29.5C407.851 7.199 389.25 2.801 362.05 1.602 334.648.301 325.949 0 256.449 0s-78.199.301-105.5 1.5c-27.199 1.199-45.898 5.602-62.098 11.898-17.203 6.5-32.602 16.5-45.402 29.602-13 12.801-23.098 28.301-29.5 45.301-6.301 16.301-10.699 34.898-11.898 62.098C.75 177.801.449 186.5.449 256l1.5 105.5c1.199 27.199 5.602 45.898 11.902 62.102 6.5 17.199 16.598 32.598 29.598 45.398 12.801 13 28.301 23.102 45.301 29.5 16.301 6.301 34.898 10.699 62.102 11.898 27.297 1.203 36 1.5 105.5 1.5l105.5-1.5c27.199-1.199 45.898-5.598 62.098-11.898 34.402-13.301 61.602-40.5 74.902-74.898 6.297-16.301 10.699-34.902 11.898-62.102 1.199-27.301 1.5-36 1.5-105.5l-1.301-105.5zm-46.098 209c-1.102 25-5.301 38.5-8.801 47.5a84.92 84.92 0 0 1-48.602 48.602c-9 3.5-22.598 7.699-47.5 8.797-27 1.203-35.098 1.5-103.398 1.5s-76.5-.297-103.402-1.5c-25-1.098-38.5-5.297-47.5-8.797C94.551 451.5 84.449 445 76.25 436.5c-8.5-8.301-15-18.301-19.102-29.398-3.5-9-7.699-22.602-8.797-47.5-1.203-27-1.5-35.102-1.5-103.402l1.5-103.398c1.098-25 5.297-38.5 8.797-47.5 4.102-11.103 10.602-21.2 19.204-29.404 8.297-8.5 18.297-15 29.398-19.098 9-3.5 22.602-7.699 47.5-8.801 27-1.199 35.102-1.5 103.398-1.5 68.402 0 76.5.301 103.402 1.5 25 1.102 38.5 5.301 47.5 8.801 11.098 4.098 21.199 10.598 29.398 19.098 8.5 8.301 15 18.301 19.102 29.402 3.5 9 7.699 22.598 8.801 47.5 1.199 27 1.5 35.098 1.5 103.398l-1.5 103.301zm-208.402-235c-72.598 0-131.5 58.898-131.5 131.5s58.902 131.5 131.5 131.5 131.5-58.898 131.5-131.5-58.898-131.5-131.5-131.5zm0 216.801c-47.098 0-85.301-38.199-85.301-85.301s38.203-85.301 85.301-85.301S341.75 208.898 341.75 256s-38.199 85.301-85.301 85.301zm0 0"/><path d="M423.852 119.301c0 16.953-13.746 30.699-30.703 30.699s-30.699-13.746-30.699-30.699 13.746-30.699 30.699-30.699 30.703 13.742 30.703 30.699zm0 0"/>
+					</svg>
+				</a>
+			</li>
+			<li class="header_social_item">
+				<a class="header_social_link" href="#">
+					<svg class="header_social_img" viewBox="0 0 90 90">
+						<path d="M82.287 45.907c-.937-4.071-4.267-7.074-8.275-7.521-9.489-1.06-19.098-1.065-28.66-1.06-9.566-.005-19.173 0-28.665 1.06-4.006.448-7.334 3.451-8.27 7.521-1.334 5.797-1.35 12.125-1.35 18.094s0 12.296 1.334 18.093c.936 4.07 4.264 7.073 8.272 7.521 9.49 1.061 19.097 1.065 28.662 1.061 9.566.005 19.171 0 28.664-1.061 4.006-.448 7.336-3.451 8.272-7.521 1.333-5.797 1.34-12.124 1.34-18.093s.009-12.297-1.324-18.094zM28.9 50.4h-5.54v29.438h-5.146V50.4h-5.439v-4.822H28.9V50.4zm13.977 29.439h-4.629v-2.785c-1.839 2.108-3.585 3.136-5.286 3.136-1.491 0-2.517-.604-2.98-1.897-.252-.772-.408-1.994-.408-3.796V54.311h4.625v18.795c0 1.084 0 1.647.042 1.799.111.718.462 1.082 1.082 1.082.928 0 1.898-.715 2.924-2.166v-19.51h4.629l.001 25.528zm17.573-7.662c0 2.361-.159 4.062-.468 5.144-.618 1.899-1.855 2.869-3.695 2.869-1.646 0-3.234-.914-4.781-2.824v2.474h-4.625V45.578h4.625v11.189c1.494-1.839 3.08-2.769 4.781-2.769 1.84 0 3.078.969 3.695 2.88.311 1.027.468 2.715.468 5.132v10.167zm17.457-4.259h-9.251v4.525c0 2.363.773 3.543 2.363 3.543 1.139 0 1.802-.619 2.066-1.855.043-.251.104-1.279.104-3.134h4.719v.675c0 1.491-.057 2.518-.099 2.98a6.59 6.59 0 0 1-1.08 2.771c-1.281 1.854-3.179 2.768-5.595 2.768s-4.262-.871-5.599-2.614c-.981-1.278-1.485-3.29-1.485-6.003v-8.941c0-2.729.447-4.725 1.43-6.015 1.336-1.747 3.177-2.617 5.54-2.617 2.321 0 4.161.87 5.457 2.617.969 1.29 1.432 3.286 1.432 6.015l-.002 5.285zm-6.929-9.755c-1.546 0-2.321 1.181-2.321 3.541v2.362h4.625v-2.362c-.001-2.36-.774-3.541-2.304-3.541zm-17.166 0c-.762 0-1.534.36-2.307 1.125v15.559c.772.774 1.545 1.14 2.307 1.14 1.334 0 2.012-1.14 2.012-3.445V61.646c0-2.302-.678-3.483-2.012-3.483zm2.584-23.19c1.705 0 3.479-1.036 5.34-3.168v2.814h4.675V8.82h-4.675v19.718c-1.036 1.464-2.018 2.188-2.953 2.188-.626 0-.994-.37-1.096-1.095-.057-.153-.057-.722-.057-1.817V8.82h-4.66v20.4c0 1.822.156 3.055.414 3.836.47 1.307 1.507 1.917 3.012 1.917zM23.851 20.598v14.021h5.184V20.598L35.271 0h-5.242l-3.537 13.595L22.812 0h-5.455l3.323 9.646c1.663 4.828 2.701 8.468 3.171 10.952zm18.368 14.375c2.342 0 4.162-.881 5.453-2.641.981-1.291 1.451-3.325 1.451-6.067v-9.034c0-2.758-.469-4.774-1.451-6.077-1.291-1.765-3.11-2.646-5.453-2.646-2.33 0-4.149.881-5.443 2.646-.993 1.303-1.463 3.319-1.463 6.077v9.034c0 2.742.47 4.776 1.463 6.067 1.293 1.76 3.113 2.641 5.443 2.641zm-2.231-18.679c0-2.387.724-3.577 2.231-3.577s2.229 1.189 2.229 3.577v10.852c0 2.387-.722 3.581-2.229 3.581s-2.231-1.194-2.231-3.581V16.294z"/>
+					</svg>
+				</a>
+			</li>
+			<li class="header_social_item">
+				<a class="header_social_link" href="#">
+					<svg class="header_social_img" viewBox="0 0 24 24">
+						<path d="M12 .5C5.37.5 0 5.78 0 12.292c0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567l-.015-2.005c-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121a4.52 4.52 0 0 1 1.23 3.164c0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182l-.015 3.229c0 .309.21.678.825.56C20.565 21.917 24 17.495 24 12.292 24 5.78 18.627.5 12 .5z"/>
+					</svg>
+				</a>
+			</li>
+		</ul>
+	</header>
+
+	<section class="invest_page">
+		<div class="container">
+			<div class="invest_block">
+				<div class="invest_block_item invest_item_card">
+					<div class="invest_card_wrap">
+						<div class="invest_block_card" data-aos="flip-left">
+							<h3 class="invest_card_title">Automated Acceleration</h3>
+							<p class="invest_card_desc">The revolutionized Gaming Platform</p>
+						</div>
+						<div class="invest_block_card" data-aos="flip-left">
+							<h3 class="invest_card_title">DAO Maker Enterprise</h3>
+							<p class="invest_card_desc">Open source auditable transaction</p>
+						</div>
+					</div>
+					<div class="invest_card_wrap">
+						<div class="invest_block_card" data-aos="flip-right">
+							<h3 class="invest_card_title">Reward Pool Governance</h3>
+							<p class="invest_card_desc">1 Trillion $, Market 44%, market share target</p>
+						</div>
+						<div class="invest_block_card" data-aos="flip-right">
+							<h3 class="invest_card_title">Benefits & Cashback</h3>
+							<p class="invest_card_desc">1.4 Million Users target after ICO</p>
+						</div>
+					</div>
+				</div>
+				<div class="invest_block_item" data-aos="fade-up-left">
+					<h2 class="invest_title">Why invest in an <span class="invest_title_mark">ICO tokens ?</span></h2>
+					<p class="invest_text">Social Mining allows companies to categorize acquired holders, and to further vet, train, and deploy these users as skilled contributors to the ecosystem. This allows community efforts to be automated, while simultaneously placing the community in the driving seat</p>
+					<p class="invest_text">The first decentralized solution that enables trustless and permissionless asset exchange. Trade tokens originating from independent blockchains without any scaling limitations.</p>
+					<div class="video_btn_wrap">
+						<button class="video_btn" type="button">
+						<svg class="video_btn_img" version="1.1" x="0px" y="0px"
+						viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+						<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="256" y1="514" x2="256" y2="2" gradientTransform="matrix(1 0 0 -1 0 514)">
+						<stop  offset="0" style="stop-color: yellow"/>
+						<stop  offset="1" style="stop-color: pink"/>
+						</linearGradient>
+						<path style="fill:url(#SVGID_1_);" d="M256,512c-68.38,0-132.667-26.629-181.02-74.98C26.629,388.667,0,324.38,0,256
+						S26.629,123.333,74.98,74.98C123.333,26.629,187.62,0,256,0s132.667,26.629,181.02,74.98C485.371,123.333,512,187.62,512,256
+						s-26.629,132.667-74.98,181.02C388.667,485.371,324.38,512,256,512z M256,40C136.897,40,40,136.897,40,256s96.897,216,216,216
+						s216-96.897,216-216S375.103,40,256,40z M165,390.562V121.438L399.138,256L165,390.562z M205,190.562v130.877L318.862,256
+						L205,190.562z"/>
+						</svg>
+							<span class="video_btn_text">Watch Video</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about" id="about_anchor">
+		<div class="container">
+			<div class="about_title_block">
+				<h2 class="about_title">What our platform does</h2>
+				<p class="about_subtitle">We have created a blockchain platform for solving various problems.</p>
+			</div>
+
+			<div class="about_content">
+				<div class="about_img_block">
+					<img src="./img/other/block.png" alt="picture design">
+				</div>
+
+				<div class="about_content_block">
+					<ul class="about_list_left" data-aos="fade-right">
+						<li class="about_list_item">
+							<h3 class="about_item_title">Smart Contract</h3>
+							<p class="about_item_text">
+								Platform has developed a proprietary protocol called Proof of HonestyTM that provides the security necessary for large scale, decentralized commerce.
+							</p>
+						</li>
+						<li class="about_list_item">
+							<h3 class="about_item_title">Security</h3>
+							<p class="about_item_text">
+								Platform has developed a proprietary protocol called Proof of HonestyTM that provides the security necessary for large scale, decentralized commerce.
+							</p>
+						</li>
+						<li class="about_list_item">
+							<h3 class="about_item_title">Governance</h3>
+							<p class="about_item_text">
+								Platform has developed a proprietary protocol called Proof of HonestyTM that provides the security necessary for large scale, decentralized commerce.
+							</p>
+						</li>
+					</ul>
+					<ul class="about_list_right" data-aos="fade-left">
+						<li class="about_list_item">
+							<h3 class="about_item_title">Smart Contract</h3>
+							<p class="about_item_text">
+								Platform has developed a proprietary protocol called Proof of HonestyTM that provides the security necessary for large scale, decentralized commerce.
+							</p>
+						</li>
+						<li class="about_list_item">
+							<h3 class="about_item_title">Security</h3>
+							<p class="about_item_text">
+								Platform has developed a proprietary protocol called Proof of HonestyTM that provides the security necessary for large scale, decentralized commerce.
+							</p>
+						</li>
+						<li class="about_list_item">
+							<h3 class="about_item_title">Governance</h3>
+							<p class="about_item_text">
+								Platform has developed a proprietary protocol called Proof of HonestyTM that provides the security necessary for large scale, decentralized commerce.
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+	<section class="distribution" id="token_anchor">
+		<div class="container">
+			<h2 class="distribution_title">Distribution of our Tokens</h2>
+
+			<div class="circle_block">
+				<div class="circle fifth" data-thickness="40">
+					<div class="circle_component">
+						<h3 class="component_num">17 %</h3>
+						<p class="component_desc">Tokens Presale</p>
+						<div class="line">
+							<div class="dot"></div>
+						</div>
+					</div>
+					<div class="circle_component">
+						<h3 class="component_num">7 %</h3>
+						<p class="component_desc">Bonus & Found</p>
+						<div class="line">
+							<div class="dot"></div>
+						</div>
+					</div>
+					<div class="circle_component">
+						<h3 class="component_num">30 %</h3>
+						<p class="component_desc">Partner and Advisors</p>
+						<div class="line">
+							<div class="dot"></div>
+						</div>
+					</div>
+					<div class="circle_component">
+						<h3 class="component_num">28 %</h3>
+						<p class="component_desc">Core Phase of Tokens Sale</p>
+						<div class="line">
+							<div class="dot"></div>
+						</div>
+					</div>
+					<div class="circle_component">
+						<h3 class="component_num">18 %</h3>
+						<p class="component_desc">Bounty and Overhead</p>
+						<div class="line">
+							<div class="dot"></div>
+						</div>
+					</div>
+				</div>	
+
+				<ul class="distribution_list">
+					<li class="distribution_list_item">Token Sale</li>
+					<li class="distribution_list_item">Core Phase of Tokens Sale <span class="procent">20 %</span></li>
+					<li class="distribution_list_item">Bounty and Overhead <span class="procent">18 %</span></li>
+					<li class="distribution_list_item">Partner and Advisors <span class="procent">30 %</span></li>
+					<li class="distribution_list_item">Bonus & Found <span class="procent">7 %</span></li>
+					<li class="distribution_list_item">Tokens Presale <span class="procent">17 %</span></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="roadmap" id="roadmap_anchor">
+		<div class="container">
+			<div class="roadmap_title_block">
+				<h2 class="roadmap_title">Roadmap</h2>
+				<p class="roadmap_subtitle">This timeline details our funding and development</p>
+			</div>
+
+			<div class="roadmap_content">
+				<ul class="roadmap_row roadmap_row_top">
+					<li class="roadmap_row_item" data-aos="flip-up">
+						<h3 class="roadmap_item_title">Start token sale</h3>
+						<p class="roadmap_item_text">Start of the ICO Token Sale platform development</p>
+						<div class="vertical_line">
+							<div class="roadmap_dot"></div>
+						</div>
+						<p class="roadmap_date">February 2021</p>
+					</li>
+					<li class="roadmap_row_item" data-aos="flip-up">
+						<h3 class="roadmap_item_title">Start token sale</h3>
+						<p class="roadmap_item_text">Start of the ICO Token Sale platform development</p>
+						<div class="vertical_line">
+							<div class="roadmap_dot"></div>
+						</div>
+						<p class="roadmap_date">January 2021</p>
+					</li>
+				</ul>
+				<ul class="roadmap_row roadmap_row_bottom">
+					<li class="roadmap_row_item" data-aos="flip-up">
+						<h3 class="roadmap_item_title">Start token sale</h3>
+						<p class="roadmap_item_text">Start of the ICO Token Sale platform development</p>
+						<div class="vertical_line">
+							<div class="roadmap_dot"></div>
+						</div>
+						<p class="roadmap_date">March 2020</p>
+					</li>
+					<li class="roadmap_row_item" data-aos="flip-up">
+						<h3 class="roadmap_item_title">Start token sale</h3>
+						<p class="roadmap_item_text">Start of the ICO Token Sale platform development</p>
+						<div class="vertical_line">
+							<div class="roadmap_dot"></div>
+						</div>
+						<p class="roadmap_date">April 2021</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<div class="team" id="team_anchor">
+		<div class="container">
+			<div class="team_content">
+				<div class="team_content_item team_content_desc">
+					<p class="team_title_subtitle">Our Team</p>
+					<h2 class="team_title">Professional Expert</h2>
+					<p class="team_content_text">
+						In 2018, after seeing fluctuations in the price of bitcoin, the development team came up with the idea of trading bitcoins in real time. We brought this idea to the Money2018 hackathon and built a prototype. However, it wasn't until I read the bitcoin article that I really understood the problems the blockchain is trying to solve.
+					</p>
+					<ul class="team_feature_list">
+						<li class="team_feature_item">Research & Development</li>
+						<li class="team_feature_item">Initial Coin Offering</li>
+						<li class="team_feature_item">Payment Integration</li>
+					</ul>
+				</div>
+				<div class="team_content_item team_content_cards" data-aos="zoom-in-left">
+					<div class="team_card_wrap">
+						<div class="team_card">
+							<div class="team_card_img">
+								<img src="./img/background/christina.png" alt="picture of our team">
+							</div>
+							<h3 class="team_name">Christina Downey</h3>
+							<p class="team_name_desc">General Director</p>
+						</div>
+					</div>
+					<div class="team_card_wrap">
+						<div class="team_card">
+							<div class="team_card_img">
+								<img src="./img/background/dami-adebayo.png" alt="picture of our team">
+							</div>
+							<h3 class="team_name">Dami Adebayo</h3>
+							<p class="team_name_desc">General Director</p>
+						</div>
+					</div>
+					<div class="team_card_wrap">
+						<div class="team_card">
+							<div class="team_card_img">
+								<img src="./img/background/iryna-sydorenko.png" alt="picture of our team">
+							</div>
+							<h3 class="team_name">Iryna Sydorenko</h3>
+							<p class="team_name_desc">General Director</p>
+						</div>
+					</div>
+					<div class="team_card_wrap">
+						<div class="team_card">
+							<div class="team_card_img">
+								<img src="./img/background/linkedin.png" alt="picture of our team">
+							</div>
+							<h3 class="team_name">Robert Downey</h3>
+							<p class="team_name_desc">Project Manager</p>
+						</div>
+					</div>
+					<div class="team_card_wrap">
+						<div class="team_card">
+							<div class="team_card_img">
+								<img src="./img/background/stefan-stefancik.png" alt="picture of our team">
+							</div>
+							<h3 class="team_name">Stefan Stefancik</h3>
+							<p class="team_name_desc">General Director</p>
+						</div>
+					</div>
+					<div class="team_card_wrap">
+						<div class="team_card">
+							<div class="team_card_img">
+								<img src="./img/background/roland-samuel.png" alt="picture of our team">
+							</div>
+							<h3 class="team_name">Roland Samuel</h3>
+							<p class="team_name_desc">General Director</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="wrap_two_block">
+	<div class="app" id="app_anchor">
+		<div class="container">
+			<div class="app_content">
+				<div class="app_content_item app_content_desc">
+					<h2 class="app_content_title">Download Mobile App</h2>
+					<p class="app_content_text">
+						ICO Crypto is a platform for the future of funding that powering dat for the new equity blockchain
+					</p>
+					<ul class="app_content_list">
+						<li class="app_list_col">
+							<ul>
+								<li class="app_list_item">Manage your portfolio</li>
+								<li class="app_list_item">High treding volume</li>
+								<li class="app_list_item">Easy to manage</li>
+							</ul>
+						</li>
+						<li class="app_list_col">
+							<ul>
+								<li class="app_list_item">Desktop Apps</li>
+								<li class="app_list_item">Largest Datapoint</li>
+								<li class="app_list_item">Secured Technology</li>
+							</ul>
+						</li>
+					</ul>
+					<div class="app_btn_block">
+						<a class="app_btn" href="#">Google store</a>
+						<a class="app_btn" href="#">Apple store</a>
+					</div>
+				</div>
+				<div class="app_content_item app_content_design">
+					<img src="./img/background/iPhoneX.png" alt="picture of design">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="faq_page" id="faq_anchor">
+		<div class="container">
+			<div class="faq_title_block">
+				<h2 class="faq_title">Frequently Asked Questions</h2>
+				<p class="faq_subtitle">Frequently asked questions by community members about social mining.</p>
+			</div>
+
+			<ul class="faq_list" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+				<li class="faq_list_item">
+					<h3 class="faq_question">What is ICO Token?
+						<svg class="faq_cross">
+							<line x1="0" y1="12" x2="25" y2="12" stroke-width="3" stroke="rgb(187, 40, 109)" stroke-linecap="round"/>
+							<line class="cross_vertical_line" x1="12" y1="0" x2="12" y2="25" stroke-width="3" stroke="rgb(187, 40, 109)" stroke-linecap="round"/>
+						</svg>
+					</h3>
+					<p class="faq_answer">Origin ICO were released during a pre-sale in 2018. They were sold on a bonding curve with each subsequent purchase increasing the price of the next Origin.</p>
+				</li>
+				<li class="faq_list_item">
+					<h3 class="faq_question">How Cryptoz different from other ICO?
+						<svg class="faq_cross">
+							<line x1="0" y1="12" x2="25" y2="12" stroke-width="3" stroke="rgb(187, 40, 109)" stroke-linecap="round"/>
+							<line class="cross_vertical_line" x1="12" y1="0" x2="12" y2="25" stroke-width="3" stroke="rgb(187, 40, 109)" stroke-linecap="round"/>
+						</svg>
+					</h3>
+					<p class="faq_answer">Masamune’s inspiration for was the token Greek mythological creature, the Chimera, which possesses features from lions, goats, and serpents. He wanted token to capture a mythical spirit, so he gave them interesting parts from a variety of creatures.</p>
+				</li>
+				<li class="faq_list_item">
+					<h3 class="faq_question">What is Cryptoz Smart Contract?
+						<svg class="faq_cross faq_cross--active">
+							<line x1="0" y1="12" x2="25" y2="12" stroke-width="3" stroke="rgb(187, 40, 109)" stroke-linecap="round"/>
+							<line class="cross_vertical_line vertical_line--open" x1="12" y1="0" x2="12" y2="25" stroke-width="3" stroke="rgb(187, 40, 109)" stroke-linecap="round"/>
+						</svg>
+					</h3>
+					<p class="faq_answer faq_answer--active">In addition, land-owners might find tokens on their land plots, or use the Axies that occupy the land plot to explore resource nodes on the map. When interacting with resources nodes can find and potentially other resources.</p>
+				</li>
+				<li class="faq_list_item">
+					<h3 class="faq_question">What's so special about Blockchain?
+						<svg class="faq_cross">
+							<line x1="0" y1="12" x2="25" y2="12" stroke-width="3" stroke="rgb(187, 40, 109)" stroke-linecap="round"/>
+							<line class="cross_vertical_line" x1="12" y1="0" x2="12" y2="25" stroke-width="3" stroke="rgb(187, 40, 109)" stroke-linecap="round"/>
+						</svg>
+					</h3>
+					<p class="faq_answer">Token represents the games we dreamed of playing while growing up. We combine many nostalgic concepts from our favorite childhood experiences while adding a sprinkle of Blockchain magic to empower our players.</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+	</div>
+	
+	<section class="contact" id="contact_anchor">
+		<div class="container">
+			<div class="contact_title_block">
+				<h2 class="contact_title">Frequently Asked Questions</h2>
+				<p class="contact_subtitle">Subscribe to our newsletter to receive the latest news about our services.</p>
+			</div>
+
+			<div class="contact_block">
+				<div class="contact_block_item contact_block_address" data-aos="fade-right">
+					<ul class="contact_list">
+						<li class="contact_list_item">
+							<p class="contact_item_address">Rasschaardpad 2140 Antwerpen,</p>
+							<p class="contact_item_address">Belgium</p>
+						</li>
+						<li class="contact_list_item">
+							<p class="contact_item_address">Call Us</p>
+							<p class="contact_item_address">+0932 222 203 534</p>
+						</li>
+						<li class="contact_list_item">
+							<p class="contact_item_address">Email</p>
+							<p class="contact_item_address">infoToken@gmail.com</p>
+						</li>
+					</ul>
+					<ul class="social_contact">
+						<li class="social_contact_item">
+							<a class="social_contact_link" href="#">
+								<svg class="contact_social_img" viewBox="0 0 24 24">
+								<path d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z"/>
+								</svg>
+							</a>
+						</li>
+						<li class="social_contact_item">
+							<a class="social_contact_link" href="#">
+								<svg class="contact_social_img" viewBox="0 0 512 512">
+									<path d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z"/>
+								</svg>
+							</a>
+						</li>
+						<li class="social_contact_item">
+							<a class="social_contact_link" href="#">
+								<svg class="contact_social_img" viewBox="0 0 511 511.9">
+									<path d="M510.949 150.5c-1.199-27.199-5.598-45.898-11.898-62.102-6.5-17.199-16.5-32.598-29.602-45.398-12.801-13-28.301-23.102-45.301-29.5C407.851 7.199 389.25 2.801 362.05 1.602 334.648.301 325.949 0 256.449 0s-78.199.301-105.5 1.5c-27.199 1.199-45.898 5.602-62.098 11.898-17.203 6.5-32.602 16.5-45.402 29.602-13 12.801-23.098 28.301-29.5 45.301-6.301 16.301-10.699 34.898-11.898 62.098C.75 177.801.449 186.5.449 256l1.5 105.5c1.199 27.199 5.602 45.898 11.902 62.102 6.5 17.199 16.598 32.598 29.598 45.398 12.801 13 28.301 23.102 45.301 29.5 16.301 6.301 34.898 10.699 62.102 11.898 27.297 1.203 36 1.5 105.5 1.5l105.5-1.5c27.199-1.199 45.898-5.598 62.098-11.898 34.402-13.301 61.602-40.5 74.902-74.898 6.297-16.301 10.699-34.902 11.898-62.102 1.199-27.301 1.5-36 1.5-105.5l-1.301-105.5zm-46.098 209c-1.102 25-5.301 38.5-8.801 47.5a84.92 84.92 0 0 1-48.602 48.602c-9 3.5-22.598 7.699-47.5 8.797-27 1.203-35.098 1.5-103.398 1.5s-76.5-.297-103.402-1.5c-25-1.098-38.5-5.297-47.5-8.797C94.551 451.5 84.449 445 76.25 436.5c-8.5-8.301-15-18.301-19.102-29.398-3.5-9-7.699-22.602-8.797-47.5-1.203-27-1.5-35.102-1.5-103.402l1.5-103.398c1.098-25 5.297-38.5 8.797-47.5 4.102-11.103 10.602-21.2 19.204-29.404 8.297-8.5 18.297-15 29.398-19.098 9-3.5 22.602-7.699 47.5-8.801 27-1.199 35.102-1.5 103.398-1.5 68.402 0 76.5.301 103.402 1.5 25 1.102 38.5 5.301 47.5 8.801 11.098 4.098 21.199 10.598 29.398 19.098 8.5 8.301 15 18.301 19.102 29.402 3.5 9 7.699 22.598 8.801 47.5 1.199 27 1.5 35.098 1.5 103.398l-1.5 103.301zm-208.402-235c-72.598 0-131.5 58.898-131.5 131.5s58.902 131.5 131.5 131.5 131.5-58.898 131.5-131.5-58.898-131.5-131.5-131.5zm0 216.801c-47.098 0-85.301-38.199-85.301-85.301s38.203-85.301 85.301-85.301S341.75 208.898 341.75 256s-38.199 85.301-85.301 85.301zm0 0"/><path d="M423.852 119.301c0 16.953-13.746 30.699-30.703 30.699s-30.699-13.746-30.699-30.699 13.746-30.699 30.699-30.699 30.703 13.742 30.703 30.699zm0 0"/>
+								</svg>
+							</a>
+						</li>
+						<li class="social_contact_item">
+							<a class="social_contact_link" href="#">
+								<svg class="contact_social_img" viewBox="0 0 90 90">
+									<path d="M82.287 45.907c-.937-4.071-4.267-7.074-8.275-7.521-9.489-1.06-19.098-1.065-28.66-1.06-9.566-.005-19.173 0-28.665 1.06-4.006.448-7.334 3.451-8.27 7.521-1.334 5.797-1.35 12.125-1.35 18.094s0 12.296 1.334 18.093c.936 4.07 4.264 7.073 8.272 7.521 9.49 1.061 19.097 1.065 28.662 1.061 9.566.005 19.171 0 28.664-1.061 4.006-.448 7.336-3.451 8.272-7.521 1.333-5.797 1.34-12.124 1.34-18.093s.009-12.297-1.324-18.094zM28.9 50.4h-5.54v29.438h-5.146V50.4h-5.439v-4.822H28.9V50.4zm13.977 29.439h-4.629v-2.785c-1.839 2.108-3.585 3.136-5.286 3.136-1.491 0-2.517-.604-2.98-1.897-.252-.772-.408-1.994-.408-3.796V54.311h4.625v18.795c0 1.084 0 1.647.042 1.799.111.718.462 1.082 1.082 1.082.928 0 1.898-.715 2.924-2.166v-19.51h4.629l.001 25.528zm17.573-7.662c0 2.361-.159 4.062-.468 5.144-.618 1.899-1.855 2.869-3.695 2.869-1.646 0-3.234-.914-4.781-2.824v2.474h-4.625V45.578h4.625v11.189c1.494-1.839 3.08-2.769 4.781-2.769 1.84 0 3.078.969 3.695 2.88.311 1.027.468 2.715.468 5.132v10.167zm17.457-4.259h-9.251v4.525c0 2.363.773 3.543 2.363 3.543 1.139 0 1.802-.619 2.066-1.855.043-.251.104-1.279.104-3.134h4.719v.675c0 1.491-.057 2.518-.099 2.98a6.59 6.59 0 0 1-1.08 2.771c-1.281 1.854-3.179 2.768-5.595 2.768s-4.262-.871-5.599-2.614c-.981-1.278-1.485-3.29-1.485-6.003v-8.941c0-2.729.447-4.725 1.43-6.015 1.336-1.747 3.177-2.617 5.54-2.617 2.321 0 4.161.87 5.457 2.617.969 1.29 1.432 3.286 1.432 6.015l-.002 5.285zm-6.929-9.755c-1.546 0-2.321 1.181-2.321 3.541v2.362h4.625v-2.362c-.001-2.36-.774-3.541-2.304-3.541zm-17.166 0c-.762 0-1.534.36-2.307 1.125v15.559c.772.774 1.545 1.14 2.307 1.14 1.334 0 2.012-1.14 2.012-3.445V61.646c0-2.302-.678-3.483-2.012-3.483zm2.584-23.19c1.705 0 3.479-1.036 5.34-3.168v2.814h4.675V8.82h-4.675v19.718c-1.036 1.464-2.018 2.188-2.953 2.188-.626 0-.994-.37-1.096-1.095-.057-.153-.057-.722-.057-1.817V8.82h-4.66v20.4c0 1.822.156 3.055.414 3.836.47 1.307 1.507 1.917 3.012 1.917zM23.851 20.598v14.021h5.184V20.598L35.271 0h-5.242l-3.537 13.595L22.812 0h-5.455l3.323 9.646c1.663 4.828 2.701 8.468 3.171 10.952zm18.368 14.375c2.342 0 4.162-.881 5.453-2.641.981-1.291 1.451-3.325 1.451-6.067v-9.034c0-2.758-.469-4.774-1.451-6.077-1.291-1.765-3.11-2.646-5.453-2.646-2.33 0-4.149.881-5.443 2.646-.993 1.303-1.463 3.319-1.463 6.077v9.034c0 2.742.47 4.776 1.463 6.067 1.293 1.76 3.113 2.641 5.443 2.641zm-2.231-18.679c0-2.387.724-3.577 2.231-3.577s2.229 1.189 2.229 3.577v10.852c0 2.387-.722 3.581-2.229 3.581s-2.231-1.194-2.231-3.581V16.294z"/>
+								</svg>
+							</a>
+						</li>
+						<li class="social_contact_item">
+							<a class="social_contact_link" href="#">
+								<svg class="contact_social_img" viewBox="0 0 24 24">
+									<path d="M12 .5C5.37.5 0 5.78 0 12.292c0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567l-.015-2.005c-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121a4.52 4.52 0 0 1 1.23 3.164c0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182l-.015 3.229c0 .309.21.678.825.56C20.565 21.917 24 17.495 24 12.292 24 5.78 18.627.5 12 .5z"/>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<form class="contact_block_item contact_block_form" action="#" data-aos="fade-left">
+					<fieldset class="input_name_wrap">
+						<input class="input_text" id="inputText" type="text" name="name" autocomplete="off" required>
+						<label class="label_name">Name</label>
+					</fieldset>
+					<fieldset class="input_name_wrap">
+						<input class="input_email" id="inputEmail" type="text" name="email" autocomplete="off" required>
+						<label class="label_name">Email</label>
+					</fieldset>
+					<textarea class="textarea_input" name="message" placeholder="Message"></textarea>
+					<input class="form_btn" type="submit" value="Send Message">
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer_page">
+		<p class="copyright">Copyright © 2018 . All rights Reserved.</p>
+	</footer>
+
+
+	<button class="arrow_top">
+		Scroll Up 
+	</button>
+
+	<div class="overlay_video">
+		<video class="video_box" width="640" height="360" poster="./img/background/poster.jpg" controls>
+			<source src="./video/Blockchain18541.mp4" type="video/mp4">
+		</video>
+	</div>
+	
+	<script src="./js/jquery-3.4.1.min.js"></script>
+	<script src="./js/circle-progress.min.js"></script><!-- https://github.com/kottenator/jquery-circle-progress -->
+	<script src="./js/jquery.video-extend.js"></script><!-- https://github.com/andchir/jquery-video-extend -->
+	<script src="./js/aos.js"></script><!-- https://michalsnik.github.io/aos/ -->
+	<script src="./js/counter.js"></script>
+	<script src="./js/main.js"></script>
+	<script>
+		AOS.init({
+			duration: 1000,
+			once: true,
+			disable: 'mobile'
+		});
+	</script>
+	
+</body>
+</html>
