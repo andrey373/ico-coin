@@ -1,0 +1,150 @@
+
+.invest_page{
+    padding: 80px 15px;
+    background: url("../img/background/block11.png")no-repeat;
+    background-position: 80% 100%; 
+    overflow: hidden;
+}
+
+.invest_block{
+    &:extend(.flex-sp-between);
+    align-items: center;
+}
+
+.invest_item_card{
+    &:extend(.flex-sp-between);
+    margin-right: 30px;
+
+    .invest_block_card{
+        width: 100%;
+        max-width: 280px;
+        padding: 30px 40px;
+        background-color: @color-btn;
+        border-radius: 17px;
+        box-shadow: 0 7px 25px #35375f;
+    }
+
+    .invest_card_title{
+        font-size: @size-twenty;
+        margin-bottom: 20px;
+        padding-top: 80px;
+        position: relative;
+
+        &::before{
+            content: "";
+            width: 45px;
+            height: 45px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .invest_card_desc{
+        line-height: 24px;
+    }
+}
+
+.invest_card_wrap:first-child{
+    margin-right: 20px;
+}
+
+.invest_card_wrap:first-child{
+    margin-top: 50px;
+    .invest_block_card:first-child{
+        margin-bottom: 40px;
+        .invest_card_title::before{
+            background: url("../img/icon/cubes.svg")no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    .invest_block_card:last-child{
+        .invest_card_title::before{
+            background: url("../img/icon/nano-technology.svg")no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
+
+.invest_card_wrap:last-child{
+    .invest_block_card:first-child{
+        margin-bottom: 40px;
+        .invest_card_title::before{
+            background: url("../img/icon/cpu.svg")no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    .invest_block_card:last-child{
+        .invest_card_title::before{
+            background: url("../img/icon/network.svg")no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
+
+
+.invest_block_item{
+    width: 100%;
+    max-width: 600px;
+
+    .invest_title{
+        font-family: 'Roboto-middle', sans-serif;
+        font-size: @size-thirtyfive;
+        margin-bottom: 30px;
+    }
+    .invest_title_mark{
+        color: @font-pink;
+        white-space: nowrap;
+    }
+
+    .invest_text{
+        line-height: 22px;
+        letter-spacing: 1.2px;
+        &:not(:last-child){
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.video_btn_wrap{
+    text-align: right;
+}
+.video_btn{
+    line-height: 0;
+    .video_btn_img{
+        width: 45px;
+        height: 45px;
+        box-shadow: 0 0 5px pink;
+        border-radius: 50%;
+        animation-name: blink;
+        animation-duration: .7s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+
+    .video_btn_text{
+        display: inline-block;
+        font-size: @size-eighteen;
+        color: @font-pink;
+        line-height: 45px;
+        margin-left: 20px;
+        vertical-align: top;
+    }
+}
+
+@keyframes blink{
+    0%{
+        box-shadow: 0 0 10px pink;
+    }
+    100%{
+        box-shadow: 0 0 20px pink;
+    }
+}
+
+
+

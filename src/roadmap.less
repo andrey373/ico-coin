@@ -1,0 +1,115 @@
+
+.roadmap{
+    padding: 80px 15px;
+}
+
+.roadmap_title_block{
+    text-align: center;
+    margin-bottom: 110px;
+
+    .roadmap_title{
+        &:extend(.all-title);
+        margin-bottom: 20px;
+    }
+}
+
+.roadmap_row{
+    display: flex;
+}
+
+.roadmap_row_top{
+    border-bottom: 3px solid @color-link;
+    padding-bottom: 60px;
+
+    .roadmap_row_item:first-of-type{
+        margin-left: 17.18vw;
+    }
+    .roadmap_row_item:not(:last-child){
+        margin-right: 17.18vw;
+    }
+    .roadmap_date{
+        font-family: 'Roboto-middle', sans-serif;
+        position: absolute;
+        left: 50%;
+        bottom: -120px;
+        transform: translateX(-50%);
+    }
+}
+
+.roadmap_row_item{
+    display: inline-block;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    position: relative;
+    border: 2px solid @font-lightPink;
+    padding: 15px 25px;
+    border-radius: 15px;
+    box-shadow: inset 0 0 15px @font-lightPink;
+
+    .roadmap_item_title{
+        font-family: 'Roboto-middle', sans-serif;
+        font-size: @size-twenty;
+        color: @font-gold;
+        margin-bottom: 15px;
+    }
+
+    .roadmap_item_text{
+        font-size: @size-fourteen;
+        letter-spacing: .8px;
+        line-height: 22px;
+    }
+}
+.vertical_line{
+    width: 3px;
+    height: 40px;
+    background-color: @color-link;
+    position: absolute;
+    bottom: -61px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .roadmap_dot{
+        width: 19px;
+        height: 19px;
+        padding: 3px;
+        position: absolute;
+        bottom: -12px;
+        left: -8px;
+        background-color: @main-color;
+        border-radius: 50%;
+    }
+}
+
+.roadmap_dot::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: @font-gold;
+    border-radius: 50%;
+}
+
+.roadmap_row_bottom{
+    padding-top: 60px;
+
+    .vertical_line{
+        top: -61px;
+        .roadmap_dot{
+            top: -12px;
+        }
+    }
+
+    .roadmap_row_item:not(:last-child){
+        margin-right: 17.18vw;
+    }
+
+    .roadmap_date{
+        font-family: 'Roboto-middle', sans-serif;
+        position: absolute;
+        left: 50%;
+        top: -120px;
+        transform: translateX(-50%);
+    }
+}
+

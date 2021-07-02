@@ -1,0 +1,104 @@
+
+
+.app{
+    padding: 40px 15px 80px;
+}
+.app_content{
+    &:extend(.flex-sp-between);
+    align-items: center;
+}
+
+.app_content_title{
+    &:extend(.all-title);
+    margin-bottom: 30px;
+}
+
+.app_content_text{
+    line-height: 24px;
+    letter-spacing: .8px;
+}
+
+.app_content_desc{
+    width: 100%;
+    max-width: 570px;
+}
+
+.app_content_list{
+    margin-top: 40px;
+
+    .app_list_col{
+        display: inline-block;
+    }
+    .app_list_col:not(:last-child){
+        margin-right: 50px;
+    }
+    .app_list_item{
+        font-size: @size-twenty;
+        padding-left: 50px;
+        position: relative;
+        line-height: 30px;
+        &:not(:last-child){
+            margin-bottom: 30px;
+        }
+
+        &::before{
+            content: "";
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left: 0;
+            top: 0; 
+        }
+    }
+}
+
+.app_list_col:first-child{
+    margin-bottom: 30px;
+
+    .app_list_item:first-child::before{
+        background: url("../img/other/blog.svg")no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .app_list_item:nth-child(2)::before{
+        background: url("../img/other/backlink.svg")no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .app_list_item:last-child::before{
+        background: url("../img/other/bank.svg")no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+.app_list_col:last-child{
+    .app_list_item:first-child::before{
+        background: url("../img/other/brand.svg")no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .app_list_item:nth-child(2)::before{
+        background: url("../img/other/charges.svg")no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .app_list_item:last-child::before{
+        background: url("../img/other/payment.svg")no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.app_btn_block{
+    margin-top: 40px;
+    .app_btn{
+        &:extend(.btn_link);
+        transition: box-shadow .2s;
+        &:hover{
+            box-shadow: 0 0 10px #bb286d;
+        }
+        &:not(:last-child){
+            margin-right: 50px;
+        }
+    }
+}

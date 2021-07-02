@@ -1,0 +1,163 @@
+
+.contact{
+    padding: 80px 15px;
+    background: url("../img/background/contact.png")no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.contact_title_block{
+    text-align: center;
+}
+
+.contact_title{
+    &:extend(.all-title);
+    margin-bottom: 20px;
+}
+
+.contact_block{
+    &:extend(.flex-sp-between);
+    width: 100%;
+    margin-top: 70px;
+}
+
+.contact_block_address{
+    min-width: 250px;
+}
+
+.contact_list_item{
+    position: relative;
+    padding-top: 50px;
+    
+    &:not(:last-child){
+        margin-bottom: 50px;
+    }
+
+    .contact_item_address{
+        font-size: @size-eighteen;
+        line-height: 28px;
+    }
+
+    &::before{
+        content: "";
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.contact_list_item:first-child::before{
+    background: url("../img/icon/gps.svg")no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.contact_list_item:nth-child(2)::before{
+    background: url("../img/icon/phone-ringing.svg")no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.contact_list_item:last-child::before{
+    background: url("../img/icon/messages.svg")no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.social_contact{
+    margin-top: 40px;
+    .social_contact_item,
+    .social_contact_link{
+        display: inline-block;
+    }
+
+    .social_contact_item:not(:last-child){
+        margin-right: 20px;
+    }
+}
+
+.contact_social_img{
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+    transition: .2s;
+    
+    &:hover{
+        fill: @font-pink;
+    }
+}
+
+.contact_block_form{
+    width: 100%;
+    max-width: 540px;
+    margin-left: 30px;
+    
+    .input_name_wrap{
+        margin-bottom: 50px; 
+        border-bottom: 2px solid rgba(255, 255, 255, .3);
+        position: relative;
+    }
+    .input_text,
+    .input_email,
+    .textarea_input{
+        font-size: @size-eighteen;
+        color: @font-white;
+        width: 100%;
+        border: none;
+        padding: 20px 20px 10px;
+        background: none;
+        outline: none;
+
+        &::placeholder{
+            color: @font-white;
+        }
+    }
+
+    .label_name{
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        pointer-events: none;
+        transition: all .3s;
+    }
+
+    .textarea_input{
+        resize: none;
+        height: 150px;
+        padding: 20px 20px 10px;
+        border-bottom: 2px solid rgba(255, 255, 255, .3);
+    }
+}
+
+.input_text:focus,
+.input_email:focus,
+.input_text:valid,
+.input_email:valid{
+    + .label_name{
+        font-size: @size-thirteen;
+        top: 0;
+    }
+}
+
+.form_btn{
+    &:extend(.btn_link);
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: box-shadow .2s;
+
+    &:hover{
+        box-shadow: 0 0 10px #bb286d;
+    }
+}
+
+.footer_page{
+    font-size: @size-thirteen;
+    text-align: center;
+    padding: 30px 15px;
+    border-top: 1px solid @color-link;
+}
