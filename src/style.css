@@ -452,6 +452,47 @@ source {
 .header_social_link .header_social_img:hover {
   fill: #fff;
 }
+.coin {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.coin_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.coin_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+.coin_item:not(:last-child) {
+  margin-right: 30px;
+}
+.coin_item .coin_name {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.coin_item .coin_usd {
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-right: 10px;
+  line-height: 16px;
+}
+.coin_item .rate {
+  font-size: 13px;
+  letter-spacing: 1.4px;
+}
 .invest_page {
   padding: 80px 15px;
   background: url("../img/background/block11.png") no-repeat;

@@ -1,0 +1,39 @@
+
+.coin{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.coin_list{
+    // max-width: 725px;
+    display: flex;
+}
+.coin_item{
+    display: flex;
+    // display: inline-block;
+    text-align: center;
+
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+
+    .coin_name{
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    .coin_usd{
+        font-size: 12px;
+        letter-spacing: .8px;
+        text-transform: uppercase;
+        margin-right: 10px;
+        line-height: 16px;
+    }
+    .rate{
+        font-size: 13px;
+        letter-spacing: 1.4px;
+    }
+}
