@@ -463,35 +463,49 @@ source {
   position: absolute;
   left: 0;
   bottom: 0;
+  padding: 0 15px;
+}
+.coin_wrap {
+  max-width: 995px;
+  overflow: hidden;
 }
 .coin_list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 100%;
+  font-size: 0;
+  white-space: nowrap;
+  line-height: 0;
 }
 .coin_item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   text-align: center;
+  -webkit-transition: margin-left 1s;
+  transition: margin-left 1s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
 .coin_item:not(:last-child) {
   margin-right: 30px;
-}
-.coin_item .coin_name {
-  font-size: 16px;
-  text-transform: uppercase;
 }
 .coin_item .coin_usd {
   font-size: 12px;
   letter-spacing: 0.8px;
   text-transform: uppercase;
   margin-right: 10px;
-  line-height: 16px;
+  line-height: 30px;
 }
 .coin_item .rate {
   font-size: 13px;
+  font-weight: 700;
   letter-spacing: 1.4px;
+  line-height: 30px;
+}
+.imgCoin {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
 }
 .invest_page {
   padding: 80px 15px;
@@ -1514,7 +1528,7 @@ source {
   }
   .page_header {
     padding-left: 15px;
-    padding-bottom: 40px;
+    padding-bottom: 70px;
   }
   .mobile_menu {
     display: block;

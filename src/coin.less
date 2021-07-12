@@ -6,34 +6,48 @@
     position: absolute;
     left: 0;
     bottom: 0;
+    padding: 0 15px;
 }
 
-.coin_list{
-    // max-width: 725px;
-    display: flex;
+.coin_wrap{
+    max-width: 995px;
+    overflow: hidden;
 }
+.coin_list{
+    width: 100%;
+    font-size: 0;
+    white-space: nowrap;
+    line-height: 0;
+}
+
 .coin_item{
-    display: flex;
-    // display: inline-block;
+    display: inline-flex;
     text-align: center;
+    transition: margin-left 1s;
+    transition-timing-function: ease-in-out;
 
     &:not(:last-child){
         margin-right: 30px;
     }
 
-    .coin_name{
-        font-size: 16px;
-        text-transform: uppercase;
-    }
     .coin_usd{
         font-size: 12px;
         letter-spacing: .8px;
         text-transform: uppercase;
         margin-right: 10px;
-        line-height: 16px;
+        line-height: 30px;
     }
     .rate{
         font-size: 13px;
+        font-weight: 700;
         letter-spacing: 1.4px;
+        line-height: 30px;
     }
+}
+
+.imgCoin{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
 }
